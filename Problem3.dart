@@ -14,7 +14,7 @@ class Circle implements Shape {
 
   @override
   void area() {
-    _area = 3.14159 * radius * radius;
+    setArea = 3.14159 * radius * radius;
   }
 
   @override
@@ -27,7 +27,8 @@ class Circle implements Shape {
 }
 
 void main() {
-  Circle circle = Circle(15.0);
+  Shape circle = Circle(15.0);
   circle.area();
   print("The area of the circle is: ${circle.getArea}");
 }
+
